@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  color: #FFF;
+}
+
+header, header nav{
+  background-color: #FFF;
+}
+header nav a.button-collapse{
+  color: #000;
+}
+.container{
+  width: 100%;
+}
+.row{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+header .container .nav-wrapper a>img{
+  width: 120px;
+}
+header .container .nav-wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Estilos para section hero*/
+#hero .container .show-on-small{
+  background: rgb(247,182,23);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px 20px;
+  border-radius: 5px;
+}
+#hero img.logo-labcar-hero{
+  width: 80px;
+}
+#hero .container .show-on-small  a{
+  background: #FFF;
+  color: #000;
+  border-radius: 10px;
+}
+#hero{
+  background-image: url(../assets/images/taxi.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+/*Estilos para ssection new app*/
+#newApp{
+  background: rgb(247,182,23);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+#newApp .box-cell-phone img{
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+.box-cell-phone{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  outline: 1px solid #FFF;
+  margin: 3%;
+}
+
+/*Estilos para section conduce*/
+#conduce{
+  background-image: url(../assets/images/conduce.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50vh;
+  color: #FFF;
+}
+.box-conduce{
+  background-color: rgba(52, 52, 52, 0.45);
+  padding: 12vh 10vw;
+}
+.box-conduce a{
+  background: rgb(247,182,23);
+  color: #FFF;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 8px;
+}
+
+/*Estilos para section tarifa*/
+#tarifas{
+  padding: 20px;
+  background: rgb(247,182,23);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#tarifas a{
+  background: #FFF;
+  border-radius: 10px;
+  color: #000;
+}
+.container-map{
+  padding: 7px 7px 0 7px;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+.container-map iframe{
+  width: -webkit-fill-available;
+  border-radius: 5px;
+}
+
+/*Estilos para section footer*/
+
+footer{
+  background-color: rgb(52, 52, 52);
+  padding: 10px;
+}
+footer a{
+  color: #FFF;
+}
+footer a.waves-effect{
+  color: #FFF;
+  font-size: 12px;
+}
+.links-external-footer{
+  padding-top: 5%;
+}
+.links-external-footer a{
+  margin-right: 5%;
+}
+footer .links-external-footer img{
+  width: 70%;
+  margin-top: 20px;
+}
+address{
+  padding-top: 5px;
+}
