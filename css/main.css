@@ -281,6 +281,30 @@ address{
   height: 0;
   padding: 0;
 }
-#modal-sesion{
+#modal-sesion, #modal-registrate, #modal-conduce{
   background: rgb(247,182,23);
+}
+#modal-registrate .modal-content a.waves-effect.btn.col.s12, #modal-conduce .modal-content a.waves-effect.btn.col.s12{
+  background: rgb(43,43,43);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.modal-content div.input-field.col.s6 input, .modal-content div.input-field.col.s12 input{
+  border-bottom: 1px solid #FFF;
+}
+.modal-content div.input-field.col.s6 label, .modal-content div.input-field.col.s12 label, .modal-content label{
+  color: #FFF;
+}
+.modal-content select{
+  background-color: #FFF;
+}
+.modal-content select{
+  color: #000;
+}
+#modal-conduce .modal-content form.col.s12 .row{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#modal-conduce .modal-content p{
+  color: #000;
 }
