@@ -56,7 +56,7 @@
 
 - Los modales han sido modificados para conservar las tonalidades de la página.
 
-- Éste reto opcional fue realizado con el framework Materialize y como cómplice se usó la propiedad flexbox, para observar como sería el resultado de la página con dicha propiedad. (Para observar el resultado sin la propiedad flexbox, consulte el repositorio nombrado 'la-bcar-bootstrap')
+- Éste reto opcional fue realizado con el framework Materialize y como cómplice se usó la propiedad flexbox, para observar como sería el resultado de la página con dicha propiedad. (Para observar el resultado sin la propiedad flexbox, consulte el repositorio nombrado 'lab-car-bootstrap')
 
 ***
 
