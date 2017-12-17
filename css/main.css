@@ -271,3 +271,16 @@ address{
     padding-top: 38vh;
   }
 }
+
+/*Estilos para los modales*/
+.modal{
+  max-height: 100%;
+}
+.modal .modal-footer{
+  background-color: rgb(247,182,23);
+  height: 0;
+  padding: 0;
+}
+#modal-sesion{
+  background: rgb(247,182,23);
+}
