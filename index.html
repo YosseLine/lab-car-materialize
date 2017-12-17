@@ -16,35 +16,46 @@
   <body>
     <!--Navbar LabCar-->
     <header>
-      <div class="container">
-        <div class="row">
-          <nav class="col s12">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo brand-logo"><img src="assets/images/logoForma.png" alt="logo LabCar"></a>
-              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="#">Viaja</a></li>
-                <li><a href="#">Conduce</a></li>
-                <li><a href="#">Iniciar sesión</a></li>
-              </ul>
-              <ul class="side-nav" id="mobile-demo">
-                <li><a href="#">Viaja</a></li>
-                <li><a href="#">Conduce</a></li>
-                <li><a href="#">Iniciar sesión</a></li>
-              </ul>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 col m12 col l12 col xl12">
+              <div class="nav-wrapper">
+                <a href="#!" class="brand-logo left"><img src="assets/images/logoForma.png" alt="logo LabCar"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-med-and-up"><i class="material-icons">menu</i></a>
+                <ul class="right show-on-medium-and-up">
+                  <li><a href="#">Viaja</a></li>
+                  <li><a href="#">Conduce</a></li>
+                  <li><a href="#">Iniciar sesión</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                  <li><a href="#">Viaja</a></li>
+                  <li><a href="#">Conduce</a></li>
+                  <li><a href="#">Iniciar sesión</a></li>
+                </ul>
+              </div>
             </div>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <!--Section Hero-->
     <section id="hero">
       <div class="container">
         <div class="row">
-          <div class="show-on-small col s10 offset-s2">
-                <h4>Comienza a viajar <br> con  <img class="logo-labcar-hero" src="assets/images/logoBlanco.png" alt="Logo LabCar"></h2>
-                <a class="waves-effect btn">Descarga el app</a>
+          <div class="hero-box col s10 offset-s2 col m7 offset-m5 col l6 offset-l6 col xl4 offset-xl8">
+            <div class="show-on-small hide-on-med-and-up">
+              <h4>Comienza a viajar <br> con  <img class="logo-labcar-hero" src="assets/images/logoBlanco.png" alt="Logo LabCar"></h2>
+              <a class="waves-effect btn">Descarga el app</a>
+            </div>
+            <div class="show-on-medium-and-up hide-on-small-only">
+              <h4>Disfruta del viaje <br>Eres dueño de tu tiempo</h4>
+              <p>Viaja con <img src="assets/images/logoBlanco.png" alt=""></p>
+              <a class="waves-effect btn">Regístrate</a>
+              <p>__________________  O bien   __________________</p>
+              <a class="waves-effect btn">Conviértete en un conductor</a>
+            </div>
           </div>
         </div>
       </div>
@@ -54,12 +65,17 @@
     <section id="newApp">
       <div class="container">
         <div class="row">
-              <div class="col s12">
+              <div class="col s12 col m10">
                 <div class="box-cell-phone">
-                  <h5 class="center-align">La nueva app</h5>
-                  <img  class="col-md-4 col-lg-4" src="assets/images/iPhone6Plus.png" alt="iPhone">
+                  <h5 class="center-align show-on-small hide-on-med-and-up">La nueva app</h5>
+                  <img  class="col m6" src="assets/images/iPhone6Plus.png" alt="iPhone">
+                  <div class="show-on-medium-and-up hide-on-small-only col m6">
+                    <h5>Descarga la nueva app</h5>
+                    <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+                    <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a donde ir.</p>
+                  </div>
                 </div>
-                <p>Llega a tu destino más rápido</p>
+                <p class="show-on-small hide-on-med-and-up">Llega a tu destino más rápido</p>
               </div>
         </div>
       </div>
@@ -69,7 +85,7 @@
     <section id="conduce">
       <div class="container">
         <div class="row">
-          <div class="col s12">
+          <div class="col s12 col m4 offset-m8">
             <div class="box-conduce">
               <h5>Conduce cuando quieras</h5>
               <p>LabCar es una poción flexible para alcanzar tus metas</p>
@@ -84,20 +100,20 @@
     <section id="tarifas">
       <div class="container">
         <div class="row">
-          <div class="col s12">
+          <div class="col s12 col m6">
             <h5 class="center-align">Tarifas</h5>
             <p>Consulta las taribas LabCar aquí</p>
+            <div class="input-field">
+               <input id="last_name" type="text" class="validate">
+               <label for="last_name">Ingresa tu ubicación</label>
+               <div class="input-field">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Ingresa tu destino</label>
+              </div>
+              <a class="waves-effect btn col s6 offset-s3">¡Trazar ruta!</a>
+           </div>
           </div>
-          <div class="input-field col s12">
-             <input id="last_name" type="text" class="validate">
-             <label for="last_name">Ingresa tu ubicación</label>
-         </div>
-         <div class="input-field col s12">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Ingresa tu destino</label>
-        </div>
-        <a class="waves-effect btn col s6 offset-s3">¡Trazar ruta!</a>
-        <div class="col s12">
+        <div class="col s12 col m6">
             <div class="container-map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15603.307481509912!2d-77.01614345!3d-12.12399545!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1513206115450" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
@@ -117,7 +133,16 @@
             </div>
           </div>
           <div class="row">
-            <div class="col s6">
+            <div class="show-on-medium-and-up hide-on-small-only col m3">
+              <div class="links-external-footer-desktop">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+            </div>
+            </div>
+            <div class="col s6 col m3">
               <a href="#" class="waves-effect btn-flat">Viaja</a>
               <a href="#" class="waves-effect btn-flat">Conduce</a>
               <a href="#" class="waves-effect btn-flat">Ciudades</a>
@@ -126,13 +151,25 @@
               <a href="#" class="waves-effect btn-flat">Paises</a>
               <a href="#" class="waves-effect btn-flat">Seguridad</a>
             </div>
-            <div class="col s6">
+            <div class="show-on-medium-and-up hide-on-small-only col m3">
+              <a href="#" class="waves-effect btn-flat">Oportunidades</a>
+              <a href="#" class="waves-effect btn-flat">Nuestra historia</a>
+              <a href="#" class="waves-effect btn-flat">API de LabCar</a>
+              <a href="#" class="waves-effect btn-flat">Eventos</a>
+              <a href="#" class="waves-effect btn-flat">Desarrolladores</a>
+              <a href="#" class="waves-effect btn-flat">Servicios</a>
+              <a href="#" class="waves-effect btn-flat">Laboratoria</a>
+              <a href="#" class="waves-effect btn-flat">Coders</a>
+            </div>
+            <div class="col s6 col m3">
               <div class="links-external-footer">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+                <div class="show-on-small hide-on-med-and-up">
+                  <a href="#" class="show-on-small hide-on-med-and-up"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#" class="show-on-small hide-on-med-and-up"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#" class="show-on-small hide-on-med-and-up"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                  <a href="#" class="show-on-small hide-on-med-and-up"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a href="#" class="show-on-small hide-on-med-and-up"><i class="fa fa-play" aria-hidden="true"></i></a>
+                </div>
                <img src="assets/images/enBadgeWebGeneric.png" alt="Play Store">
                <img src="assets/images/appstore.png" alt="Apple">
               </div>
@@ -156,7 +193,9 @@
     <script type="text/javascript">
        $(document).ready(function(){
          $(".button-collapse").sideNav();
+         $('.modal').modal();
        });
+
     </script>
   </body>
 </html>

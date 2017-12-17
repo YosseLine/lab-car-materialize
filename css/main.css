@@ -31,19 +31,22 @@ header .container .nav-wrapper{
   display: flex;
   justify-content: flex-end;
 }
-
+header nav a.button-collapse{
+  transform: translateX(1100%);
+}
 /*Estilos para section hero*/
-#hero .container .show-on-small{
+#hero .container .hero-box{
   background: rgb(247,182,23);
   display: flex;
   justify-content: center;
   padding: 20px 0 20px 20px;
   border-radius: 5px;
+  margin-right: 0;
 }
 #hero img.logo-labcar-hero{
   width: 80px;
 }
-#hero .container .show-on-small  a{
+#hero .container .hero-box  a{
   background: #FFF;
   color: #000;
   border-radius: 10px;
@@ -143,12 +146,15 @@ footer a{
 footer a.waves-effect{
   color: #FFF;
   font-size: 12px;
+  padding-left: 0;
+  display: table;
 }
 .links-external-footer{
   padding-top: 5%;
 }
 .links-external-footer a{
   margin-right: 5%;
+  display: inline-block !important;
 }
 footer .links-external-footer img{
   width: 70%;
@@ -156,4 +162,112 @@ footer .links-external-footer img{
 }
 address{
   padding-top: 5px;
+}
+
+@media (min-width: 768px){
+  nav ul a{
+    color: #000;
+  }
+  .nav-wrapper a.brand-logo{
+    left: 5rem;
+  }
+  #hero .container .show-on-medium-and-up.hide-on-small-only p>img{
+    width: 80px;
+    margin-left: 10px;
+  }
+  #hero .container .show-on-medium-and-up.hide-on-small-only a{
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /*section newApp*/
+  .box-cell-phone{
+    flex-direction: inherit;
+    margin: 3% 3% 3% 0;
+  }
+  #newApp div.show-on-medium-and-up.hide-on-small-only.col.m6{
+    padding: 10px 20px;
+  }
+  #newApp .container .row div.col.s12.col.m10{
+    padding-left: 0;
+  }
+  /*Section conduce*/
+  #conduce{
+    height: 35vh;
+    flex-direction: inherit;
+    align-items: flex-start;
+  }
+  .box-conduce{
+    padding: 2vh 3vw;
+  }
+  #conduce .container .row div.col.s12.col.m4.offset-m8{
+    padding-right: 0;
+  }
+  /*Section tarifas*/
+  #tarifas .container .row>div:first-child{
+    padding-top: 6vh;
+  }
+  #tarifas input.active{
+    border-bottom: 1px solid #FFF;
+    box-shadow: 0 1px 0 0 #FFF;
+  }
+  .links-external-footer-desktop{
+    padding-top: 25vh;
+  }
+  .links-external-footer-desktop a{
+    margin-right: 5%;
+  }
+  .links-external-footer{
+    padding-top: 15vh;
+  }
+}
+
+@media (min-width: 992px) {
+  #hero{
+    height: 60vh;
+  }
+  #conduce{
+    height: 30vh;
+  }
+  footer .container .row div.col.s6.col.m3 a{
+    display: flex;
+    flex-direction: column;
+  }
+  .links-external-footer-desktop{
+    padding-top: 18vh;
+  }
+  .links-external-footer{
+    padding-top: 9vh;
+  }
+}
+
+@media (min-width: 1200px) {
+   #hero .container, #conduce .container{
+    margin-right: 0;
+  }
+  #hero{
+    height: 85vh;
+  }
+  #newApp .container{
+    margin-left: 0;
+  }
+  #newApp div.show-on-medium-and-up.hide-on-small-only.col.m6{
+    padding: 20px 50px;
+  }
+  .box-cell-phone{
+    padding: 50px 20px;
+  }
+  #conduce{
+    height: 60vh;
+    background-position: center;
+  }
+  .box-conduce{
+   padding: 5vh 5vw;
+  }
+  #tarifas{
+    padding: 50px 20px;
+  }
+  .links-external-footer-desktop{
+    padding-top: 38vh;
+  }
 }
