@@ -31,17 +31,17 @@
                 <ul class="side-nav" id="mobile-demo">
                   <li><a href="#">Viaja</a></li>
                   <li><a href="#">Conduce</a></li>
-                  <li><a href="#modal-sesion">Iniciar sesión</a></li>
+                  <li><a href="#modal-sesion" class="modal-trigger">Iniciar sesión</a></li>
                 </ul>
               </div>
             </div>
             <!--Modal de iniciar sesión-->
             <div id="modal-sesion" class="modal">
               <div class="modal-content">
-                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right">Cerrar</a>
                 <img  class="col s4 offset-s4" src="assets/images/user.png" alt="User">
                 <div class="row">
-                  <form class="col s8 offset-s2">
+                  <form class="col s12 col m8 offset-m2">
                     <div class="row">
                       <div class="input-field col s12">
                         <input id="person" type="tel" class="validate">
@@ -50,10 +50,12 @@
                       <div class="input-field col s12">
                         <input id="lock" type="tel" class="validate">
                         <label for="lock">Password</label>
-                        <a class="waves-effect btn col s3 offset-s5">LOGING</a>
-                        <br>
-                        <p class="col s8">¿Forgot password? <a href="#">Click Here</a></p>
                       </div>
+                    </div>
+                    <div class="row">
+                      <a class="waves-effect btn col s6 offset-s3">LOGING</a> <!-- col s3 offset-s5-->
+                      <br>
+                      <p class="col s12">¿Forgot password? <a href="#">Click Here</a></p>
                     </div>
                   </form>
                 </div>
@@ -181,9 +183,9 @@
             <div class="modal-content">
                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right">Cerrar</a>
                 <div class="row">
-                  <form class="col s12">
+                  <form class="col s12 col m12 col l12 col xl12">
                      <div class="row">
-                       <div class="col s6">
+                       <div class="col s12 col m6">
                          <label>¿Tienes vehículo de cuator puertas?</label>
                         <select class="browser-default">
                           <option value="" disabled selected>¿Tienes vehículo de cuator puertas?</option>
@@ -191,7 +193,7 @@
                           <option value="2">No</option>
                         </select>
                       </div>
-                      <div class="col s6">
+                      <div class="col s12 col m6">
                         <label>Marca</label>
                          <select class="browser-default">
                            <option value="" disabled selected>Elige una marca</option>
@@ -204,7 +206,7 @@
                       </div>
                      </div>
                      <div class="row">
-                       <div class="col s6">
+                       <div class="col s6 col m6">
                          <label>Modelo</label>
                          <select class="browser-default">
                            <option value="" disabled selected>Ingrese modelo</option>
@@ -214,7 +216,7 @@
                            <option value="4">Modelo 4</option>
                         </select>
                       </div>
-                      <div class="col s6">
+                      <div class="col s6 col m6">
                         <label>Año</label>
                        <select class="browser-default">
                          <option value="" disabled selected>Ingrese el año de su vehículo</option>
@@ -227,11 +229,11 @@
                      </div>
                      </div>
                      <div class="row">
-                       <div class="input-field col s6">
+                       <div class="input-field col s12 col m6">
                          <input id="number"type="text" class="validate">
                          <label for="number">Número de la matrícula</label>
                        </div>
-                       <div class="input-field col s6">
+                       <div class="input-field col s12 col m6">
                          <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
                        </div>
                      </form>
